@@ -1,0 +1,127 @@
+html, body {
+    max-width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.top-nav {
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    flex: 1;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    -webkit-flex: 2;
+    -moz-flex: 2;
+    flex: 2
+}
+
+.logo-img {
+    margin-left: 1em;
+    max-width: 125px;
+}
+
+.nav-title {
+    position: relative;
+    -webkit-flex: 8;
+    -moz-flex: 8;
+    flex: 8;
+    text-align: right;
+    margin: 0;
+}
+
+.nav-title h1, .nav-title h4 {
+    position: absolute;
+    right: 0;
+    margin: 0;
+}
+
+.nav-title h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    bottom: .25em;
+}
+
+.nav-title > h4 {
+    bottom: 0;
+    font-weight: 100;
+    font-size: 24px;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+    width: 100%;
+}
+
+/** Content **/
+
+.content {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero, .featured, .top-nav {
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    flex: 1;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.hero > .hero-img {
+    margin: 0 auto;
+    max-height: 500px;
+    width: 100%;
+}
+
+.featured {
+    margin: 0;
+    flex-wrap: wrap;
+}
+.featured-header {
+    width: 100%;
+}
+.works {
+    width: 100%;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+}
+.work {
+    margin: 0 1em;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    flex: 1;
+    text-align: center;
+}
+.work > .work-img > img {
+    max-height: 250px;
+    width: 100%;
+}
