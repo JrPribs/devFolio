@@ -1,6 +1,7 @@
+/** Global & Util Styles **/
 body,
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   max-width: 1200px;
   margin: 0 auto; }
 
@@ -10,8 +11,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 2em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 2em "Montserrat", sans-serif;
   color: #2d3c49; }
 
 a {
@@ -50,7 +50,7 @@ a {
       font-weight: 400;
       bottom: 0.25em; }
     .top-nav .nav-title h4 {
-      font-family: 'Open Sans', sans-serif;
+      font-family: "Open Sans", sans-serif;
       bottom: 0;
       font-weight: 100;
       font-size: 24px; }
@@ -93,7 +93,7 @@ hr {
   -webkit-flex-direction: row;
   -moz-flex-direction: row;
   flex-direction: row;
-  margin: 0;
+  margin: 0 auto;
   flex-wrap: wrap; }
   .featured .featured-header h2 {
     color: #2d3c49;
@@ -111,12 +111,14 @@ hr {
     flex-wrap: wrap;
     margin: 0; }
     .featured .features .feature {
-      margin: 0 1em;
+      margin: 0;
+      padding: 0 1em;
       -webkit-flex: 1;
       -moz-flex: 1;
       flex: 1;
       text-align: center; }
       .featured .features .feature .feature-img > img {
+        box-sizing: border-box;
         border: 2px solid #7d97ad;
         border-radius: 1em;
         height: 250px;
@@ -127,7 +129,7 @@ hr {
         -webkit-box-shadow: 0 8px 6px -6px #2d3c49;
         -moz-box-shadow: 0 8px 6px -6px #2d3c49;
         box-shadow: 0 8px 6px -6px #2d3c49;
-        font-family: 'Open Sans', sans-serif;
+        font-family: "Open Sans", sans-serif;
         margin: 0 auto;
         font-size: 2em;
         font-weight: 400; }
@@ -142,21 +144,18 @@ hr {
     -moz-flex-direction: column;
     flex-direction: column; }
     .top-nav .logo {
-      display: none; }
+      margin: 0 auto; }
     .top-nav .nav-title {
       text-align: center; }
       .top-nav .nav-title h1,
       .top-nav .nav-title h4 {
         position: relative; }
       .top-nav .nav-title h1 {
-        margin-top: 0.25em;
-        -webkit-order: 0;
-        -moz-order: 0;
-        order: 0; }
+        font-size: 2.5em;
+        margin-top: 0.25em; }
       .top-nav .nav-title h4 {
-        -webkit-order: 1;
-        -moz-order: 1;
-        order: 1; }
+        width: 100%;
+        font-size: 1.25em; }
   .featured .featured-header {
     margin: 0 auto;
     font-size: 1.5em; }
