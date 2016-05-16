@@ -71,6 +71,7 @@ gulp.task('images', function() {
 
 var sourcePaths = {
     styles: ['scss/**/*.scss'],
+	js: ['js/**/*.js'],
     views: ['**/*.html']
 };
 
@@ -106,6 +107,7 @@ gulp.task('openbrowser', function() {
 
 gulp.task('watch', function() {
     gulp.watch(sourcePaths.styles, ['sass']);
+	gulp.watch(sourcePaths.js);
     gulp.watch(sourcePaths.views);
 });
 
