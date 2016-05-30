@@ -138,6 +138,16 @@ span {
 #lets-connect {
   text-align: center; }
 
+#online-courses {
+  display: flex;
+  flex-wrap: wrap; }
+  #online-courses .codeschool-course {
+    text-align: center;
+    flex: 1;
+    height: 100px; }
+    #online-courses .codeschool-course img {
+      height: 100px; }
+
 /* Media queries to handle various device widths */
 @media only screen and (max-width: 1024px) {
   #lets-connect {

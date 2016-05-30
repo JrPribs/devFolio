@@ -113,4 +113,9 @@ gulp.task('watch', function() {
 
 gulp.task('build', ['sass', 'images']);
 
-gulp.task('default', ['build', 'webserver', 'watch', 'openbrowser']);
+gulp.task('default', [
+   'build',
+    'webserver',
+    'watch',
+   'openbrowser'
+]);

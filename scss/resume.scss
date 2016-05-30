@@ -168,6 +168,18 @@ span {
   text-align: center;
 }
 
+#online-courses {
+    display: flex;
+    flex-wrap: wrap;
+    .codeschool-course {
+        text-align: center;
+        flex: 1;
+        height: 100px;
+        img {
+            height: 100px;
+        }
+    }
+}
 /* Media queries to handle various device widths */
 
 @media only screen and (max-width: 1024px) {

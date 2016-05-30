@@ -49,11 +49,14 @@ var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<em><br>Major: %data%</em>';
 
-var HTMLonlineClasses = '<h3>Online Classes</h3>';
-var HTMLonlineTitle = '<a href="#">%data%';
-var HTMLonlineSchool = ' - %data%</a>';
+var HTMLonlineClasses = '<div id="online-courses"><h3>Online Classes</h3></div>';
+var HTMLonlineUrl = '<a href="%data%">';
+var HTMLonlineTitle = '%data%</a>';
+var HTMLcodeSchool = '<h4>CodeSchool</h4>';
+var HTMLcodeSchoolCourse = '<div class="codeschool-course"></div>';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
 var HTMLonlineURL = '<br><a href="#">%data%</a>';
+var HTMLonlineBadge = '<img src="%data%">';
 
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
