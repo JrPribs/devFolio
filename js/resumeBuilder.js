@@ -1113,14 +1113,10 @@
  };
 
  var dataPlaceholder = '%data%';
- var $header = $('#header');
- var $topContacts = $('#topContacts');
+ var $footerContacts = $('#footerContacts');
  var $workExp = $('#workExperience');
  var $projects = $('#projects');
  var $education = $('#education');
-
- $header.prepend(insertData(HTMLheaderRole, bio.role));
- $header.prepend(insertData(HTMLheaderName, bio.name));
 
  bio.display();
 
@@ -1143,10 +1139,15 @@
  function displayWork() {
      work.jobs.forEach(function(job) {
          $workExp.append(HTMLworkStart);
-         var jobTitle = insertData(HTMLworkEmployer, job.employer) + insertData(HTMLworkTitle, job.title);
-         $('.work-entry:last').append(jobTitle);
-         $('.work-entry:last').append(insertData(HTMLworkDates, job.dates));
-         $('.work-entry:last').append(insertData(HTMLworkLocation, job.location));
+         var $workTop = $(HTMLworkTop);
+         $workTop.append(insertData(HTMLworkTitle, job.title));
+         $workTop.append(insertData(HTMLworkDates, job.dates));
+         $('.work-entry:last').append($workTop);
+         var employerInfo = '<span class="clear-fix">' +
+            insertData(HTMLworkLocation, job.location) +
+            insertData(HTMLworkEmployer, job.employer) +
+            '</span>';
+         $('.work-entry:last').append(employerInfo);
          $('.work-entry:last').append(insertData(HTMLworkDescription, job.description));
      });
  }
@@ -1166,6 +1167,10 @@
  }
 
  function displayBio() {
+     var $header = $('#header');
+     var $topContacts = $('#topContacts');
+     var $headerTop = $('#header-top');
+     var $headerMain = $('#header-main');
      var templates = {
          mobile: HTMLmobile,
          email: HTMLemail,
@@ -1174,12 +1179,21 @@
          location: HTMLlocation,
          blog: HTMLblog
      };
+
+     // Add name & role
+     $headerTop.prepend(insertData(HTMLheaderRole, bio.role));
+     $headerTop.prepend(insertData(HTMLheaderName, bio.name));
+
+     // Add contact info
      Object.keys(bio.contacts).forEach(function(key) {
          $topContacts.append(insertData(templates[key], bio.contacts[key]));
+         $footerContacts.append(insertData(templates[key], bio.contacts[key]));
      });
-     $header.append(insertData(HTMLbioPic, bio.bioPic));
-     $header.append(insertData(HTMLwelcomeMsg, bio.welcomeMsg));
-     $header.append(HTMLskillsStart);
+
+     // Add bio info
+     $headerMain.append(insertData(HTMLbioPic, bio.bioPic));
+     $headerMain.append(insertData(HTMLwelcomeMsg, bio.welcomeMsg));
+     $headerMain.append(HTMLskillsStart);
      bio.skills.forEach(function(skill) {
          $('#skills').append(insertData(HTMLskills, skill));
      });
@@ -1187,14 +1201,13 @@
 
  function displayEducation() {
      education.schools.forEach(addSchool);
-     $education.append(HTMLonlineClasses);
-     $('#online-courses').append(HTMLcodeSchool);
+    $('#online-courses').append(HTMLcodeSchool);
      education.onlineCourses[0].courses.forEach(function(course) {
          var $courseHTML = $(HTMLcodeSchoolCourse);
          var title = insertData(HTMLonlineUrl, course.url) + insertData(HTMLonlineTitle, course.title);
          var badge = insertData(HTMLonlineBadge, course.badge);
-         $courseHTML.append([title, badge].join(''));
-         $('#online-courses').append($courseHTML);
+         $courseHTML.append([badge, title].join(''));
+         $('#codeschool-courses').append($courseHTML);
      });
  }
 

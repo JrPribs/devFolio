@@ -1,113 +1,60 @@
+/***************************
+        SASS VARIABLES
+***************************/
 body,
 div,
-ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 li,
 p,
+ul {
+  margin: 0;
+  padding: 0;
+  font: normal normal normal 14px/21px "Roboto", sans-serif;
+  color: #212121; }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  padding: 0;
-  margin: 0;
-  font-family: "Roboto", sans-serif; }
+  font-variant: small-caps; }
+
+h2 {
+  color: #03A9F4; }
+
+h2.accent-bg {
+  color: #FFFFFF; }
 
 .clear-fix {
   overflow: auto; }
 
-.education-entry,
-.work-entry,
-.project-entry {
-  padding: 0 5%; }
+.primary-bg {
+  background-color: #607D8B; }
 
-h1 {
-  font-size: 40px;
-  color: #f5a623;
-  line-height: 48px;
-  display: inline; }
+.primary-bg-text {
+  color: #FFFFFF; }
 
-h2 {
-  font-weight: bold;
-  font-size: 24px;
-  color: #999;
-  line-height: 29px;
-  padding: 10px; }
+.light-bg {
+  background-color: #CFD8DC; }
 
-h3 {
-  font-style: italic;
-  font-size: 20px;
-  color: #000;
-  line-height: 22px; }
+.dark-bg {
+  background-color: #455A64; }
 
-h4 {
-  font-weight: bold;
-  font-size: 14px;
-  color: #4a4a4a;
-  line-height: 17px; }
+.accent-bg {
+  background-color: #03A9F4; }
 
-h2,
-h3,
-h4,
-h5 {
-  padding: 10px 5%; }
+.text-secondary {
+  color: #727272; }
 
-.date-text {
-  font-style: italic;
-  font-size: 14px;
-  color: #999;
-  line-height: 16px;
-  float: left; }
-
-.location-text {
-  font-style: italic;
-  font-size: 14px;
-  color: #999;
-  line-height: 16px;
-  float: right; }
-
-p {
-  font-size: 14px;
-  color: #333;
-  line-height: 21px; }
-
-a {
-  color: #1199c3;
-  text-decoration: none;
-  margin-top: 10px;
-  display: block; }
-
-.welcome-message {
-  font-style: italic;
-  font-size: 18px;
-  color: #f3f3f3;
-  line-height: 28px; }
-
-#skills-h3 {
-  color: #f5ae23;
-  display: none; }
-
-.orange {
-  background-color: #f5ae23; }
-
-.orange-text {
-  color: #f5ae23; }
-
-.white-text {
-  font-weight: bold;
-  color: #fff; }
-
-.gray {
-  background-color: #f3f3f3;
-  padding-bottom: 10px;
-  clear: both; }
-
-.dark-gray {
-  background-color: #4a4a4a; }
-
-/* TODO: Replace with image later */
-#header {
-  background-color: #484848; }
+.accent-text {
+  font-variant: small-caps;
+  color: #03A9F4; }
 
 .flex-box {
   display: -webkit-flex;
@@ -119,6 +66,97 @@ a {
 
 .center-content {
   padding: 2.5% 5%; }
+
+#header li,
+#header p {
+  color: #FFFFFF; }
+
+#header #header-top {
+  padding: 1% 5% 0; }
+
+#header #header-main {
+  padding: 0 5% 2.5%; }
+
+#skills-h3 {
+  color: #03A9F4; }
+
+#footerContacts {
+  background-color: #455A64; }
+
+#footerContacts .accent-text,
+#topContacts .accent-text {
+  font-size: 1.25em; }
+
+.work-entry {
+  margin: 1em;
+  margin-bottom: 2em;
+  padding: 1em; }
+  .work-entry h3,
+  .work-entry h4,
+  .work-entry p {
+    font-variant: normal;
+    color: #212121; }
+  .work-entry .date-text,
+  .work-entry .location-text {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 18px; }
+  .work-entry h3,
+  .work-entry .employer {
+    float: left; }
+  .work-entry h4 {
+    color: #727272;
+    font-weight: normal;
+    padding: 5px 0 0 0;
+    margin: 0; }
+  .work-entry p {
+    text-align: justify;
+    padding: 0 1em;
+    margin-top: -1em; }
+  .work-entry .date-text,
+  .work-entry .location-text {
+    float: right; }
+
+.section {
+  border-bottom: 1px solid #B6B6B6; }
+
+.education-entry,
+.project-entry,
+.work-entry {
+  padding: 0 5%; }
+
+h1 {
+  font-size: 40px;
+  color: #03A9F4;
+  line-height: 48px;
+  display: inline; }
+
+h2 {
+  font-size: 30px;
+  line-height: 29px;
+  padding: 10px 5%; }
+
+h3 {
+  font-style: italic;
+  font-size: 22px;
+  line-height: 22px; }
+
+h4 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 17px; }
+
+a {
+  color: #1199c3;
+  text-decoration: none;
+  margin-top: 10px;
+  display: block; }
+
+.welcome-message {
+  font-style: italic;
+  font-size: 18px;
+  color: #b5b5b7;
+  line-height: 28px; }
 
 ul {
   list-style-type: none; }
@@ -140,13 +178,38 @@ span {
 
 #online-courses {
   display: flex;
-  flex-wrap: wrap; }
-  #online-courses .codeschool-course {
-    text-align: center;
-    flex: 1;
-    height: 100px; }
-    #online-courses .codeschool-course img {
-      height: 100px; }
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 1em; }
+  #online-courses .online-course {
+    margin: 0 auto;
+    color: #03A9F4; }
+  #online-courses #codeschool-courses {
+    display: flex;
+    -moz-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 5%; }
+    #online-courses #codeschool-courses .codeschool-course {
+      background-color: #fff;
+      padding: 5px;
+      border-radius: 1px;
+      box-shadow: 0 1px 3px #000;
+      margin: 5px;
+      text-align: center;
+      flex: 1;
+      max-height: 150px;
+      min-width: 150px; }
+      #online-courses #codeschool-courses .codeschool-course .codeschool-title {
+        margin: 5px;
+        max-height: 30px; }
+      #online-courses #codeschool-courses .codeschool-course img {
+        padding: 0;
+        max-height: 100px; }
 
 /* Media queries to handle various device widths */
 @media only screen and (max-width: 1024px) {
