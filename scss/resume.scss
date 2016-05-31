@@ -29,10 +29,29 @@ ul {
 
 h1 {
     font-variant: small-caps;
+    font-size: 40px;
+    color: $accent-color;
+    line-height: 48px;
+    display: inline;
 }
 
 h2 {
     color: $accent-color;
+    font-size: 30px;
+    line-height: 29px;
+    padding: 10px 5%;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 22px;
+    line-height: 22px;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 17px;
 }
 
 h2.accent-bg {
@@ -161,31 +180,6 @@ h2.accent-bg {
 .project-entry,
 .work-entry {
     padding: 0 5%;
-}
-
-h1 {
-    font-size: 40px;
-    color: $accent-color;
-    line-height: 48px;
-    display: inline;
-}
-
-h2 {
-    font-size: 30px;
-    line-height: 29px;
-    padding: 10px 5%;
-}
-
-h3 {
-    font-style: italic;
-    font-size: 22px;
-    line-height: 22px;
-}
-
-h4 {
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 17px;
 }
 
 a {
