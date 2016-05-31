@@ -175,8 +175,7 @@ span {
   flex-direction: column;
   padding-bottom: 1em; }
   #online-courses .online-course {
-    margin: 0 auto;
-    color: #03A9F4; }
+    padding: 1% 5%; }
   #online-courses #codeschool-courses {
     display: flex;
     -moz-flex-direction: row;
