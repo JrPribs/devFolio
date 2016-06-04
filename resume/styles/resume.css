@@ -79,6 +79,24 @@ h2.accent-bg {
 .center-content {
   padding: 2.5% 5%; }
 
+.section {
+  border-bottom: 1px solid #B6B6B6; }
+
+.pan-left,
+.pan-right {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  top: 0;
+  background-color: #455A64; }
+
+.pan-left {
+  left: 0; }
+
+.pan-right {
+  right: 0; }
+
 #header li,
 #header p {
   color: #FFFFFF; }
@@ -107,7 +125,6 @@ h2.accent-bg {
   .work-entry h3,
   .work-entry h4,
   .work-entry p {
-    font-variant: normal;
     color: #212121; }
   .work-entry .date-text,
   .work-entry .location-text {
@@ -130,19 +147,15 @@ h2.accent-bg {
   .work-entry .location-text {
     float: right; }
 
-.section {
-  border-bottom: 1px solid #B6B6B6; }
-
 .education-entry,
 .project-entry,
-.work-entry {
+.work-entry,
+.online-course {
   padding: 0 5%; }
 
 a {
-  color: #1199c3;
-  text-decoration: none;
-  margin-top: 10px;
-  display: block; }
+  color: #03A9F4;
+  text-decoration: none; }
 
 .welcome-message {
   font-style: italic;
@@ -173,19 +186,21 @@ span {
   -moz-flex-direction: column;
   -webkit-flex-direction: column;
   flex-direction: column;
-  padding-bottom: 1em; }
+  padding-bottom: 1em;
+  margin-top: 2em; }
+  #online-courses .section {
+    margin: 0 5%; }
   #online-courses .online-course {
     padding: 1% 5%; }
-  #online-courses #codeschool-courses {
+  #online-courses .onlineschool-courses {
+    position: relative;
     display: flex;
     -moz-flex-direction: row;
     -webkit-flex-direction: row;
     flex-direction: row;
-    -moz-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin: 0 5%; }
-    #online-courses #codeschool-courses .codeschool-course {
+    overflow-x: scroll;
+    margin: 0 7.5%; }
+    #online-courses .onlineschool-courses .onlineschool-course {
       background-color: #fff;
       padding: 5px;
       border-radius: 1px;
@@ -193,12 +208,15 @@ span {
       margin: 5px;
       text-align: center;
       flex: 1;
-      max-height: 150px;
+      max-height: 175px;
       min-width: 150px; }
-      #online-courses #codeschool-courses .codeschool-course .codeschool-title {
+      #online-courses .onlineschool-courses .onlineschool-course .onlineschool-title {
         margin: 5px;
         max-height: 30px; }
-      #online-courses #codeschool-courses .codeschool-course img {
+      #online-courses .onlineschool-courses .onlineschool-course a {
+        margin-top: 10px;
+        display: block; }
+      #online-courses .onlineschool-courses .onlineschool-course img {
         padding: 0;
         max-height: 100px; }
 

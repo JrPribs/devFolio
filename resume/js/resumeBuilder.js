@@ -25,7 +25,9 @@
          url: 'http://www.wgu.edu'
      }],
      onlineCourses: [{
-         name: 'Codeschool',
+         school: 'Codeschool',
+         url: 'http://www.codeschool.com',
+         dates: '7/1/2012 - Current',
          profileUrl: 'https://www.codeschool.com/users/jpribesh',
          courses: [{
              title: "Mastering GitHub",
@@ -109,20 +111,22 @@
              badge: "https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/3/completed-jquery-air-first-flight-6072ff35bda50090240523d8bf034f45.png"
          }]
      }, {
-         name: 'TeamTreehouse',
+         school: 'TeamTreehouse',
+         url: 'https://teamtreehouse.com',
          profileUrl: 'https://teamtreehouse.com/jonathanpribesh',
+         dates: '01/28/2013 - Current',
          courses: [{
              id: 49,
-             name: "Newbie",
+             title: "Newbie",
              url: "https://teamtreehouse.com/jonathanpribesh",
-             icon_url: "https://achievement-images.teamtreehouse.com/Generic_Newbie.png",
+             badge: "https://achievement-images.teamtreehouse.com/Generic_Newbie.png",
              earned_date: "2013-01-28T16:21:19.000Z",
              courses: []
          }, {
              id: 159,
-             name: "Website Basics",
+             title: "Website Basics",
              url: "https://teamtreehouse.com/library/build-a-simple-website/website-basics",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WebsiteIsland1_Stage1.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WebsiteIsland1_Stage1.png",
              earned_date: "2013-01-28T16:32:20.000Z",
              courses: [{
                  title: "Build a Simple Website",
@@ -135,9 +139,9 @@
              }]
          }, {
              id: 165,
-             name: "Text Editors and HTML",
+             title: "Text Editors and HTML",
              url: "https://teamtreehouse.com/library/build-a-simple-website/text-editors-and-html",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WebsiteIsland1_Stage2.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WebsiteIsland1_Stage2.png",
              earned_date: "2013-01-28T17:08:50.000Z",
              courses: [{
                  title: "Build a Simple Website",
@@ -150,9 +154,9 @@
              }]
          }, {
              id: 170,
-             name: "Creating a Website Structure",
+             title: "Creating a Website Structure",
              url: "https://teamtreehouse.com/library/build-a-simple-website/creating-a-website-structure",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WebsiteIsland1_Stage3.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WebsiteIsland1_Stage3.png",
              earned_date: "2013-01-28T17:18:48.000Z",
              courses: [{
                  title: "Build a Simple Website",
@@ -165,9 +169,9 @@
              }]
          }, {
              id: 175,
-             name: "Styling Content",
+             title: "Styling Content",
              url: "https://teamtreehouse.com/library/build-a-simple-website/styling-content",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WebsiteIsland1_Stage4.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WebsiteIsland1_Stage4.png",
              earned_date: "2013-01-28T18:07:20.000Z",
              courses: [{
                  title: "Build a Simple Website",
@@ -180,9 +184,9 @@
              }]
          }, {
              id: 179,
-             name: "Launching the Website",
+             title: "Launching the Website",
              url: "https://teamtreehouse.com/library/build-a-simple-website/launching-the-website",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WebsiteIsland1_Stage5.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WebsiteIsland1_Stage5.png",
              earned_date: "2013-01-29T14:36:55.000Z",
              courses: [{
                  title: "Build a Simple Website",
@@ -195,9 +199,9 @@
              }]
          }, {
              id: 26,
-             name: "Introduction",
+             title: "Introduction",
              url: "https://teamtreehouse.com/library/html/introduction",
-             icon_url: "https://achievement-images.teamtreehouse.com/HTML_Basics.png",
+             badge: "https://achievement-images.teamtreehouse.com/HTML_Basics.png",
              earned_date: "2013-01-29T14:38:55.000Z",
              courses: [{
                  title: "HTML",
@@ -210,9 +214,9 @@
              }]
          }, {
              id: 28,
-             name: "Text",
+             title: "Text",
              url: "https://teamtreehouse.com/library/html/text",
-             icon_url: "https://achievement-images.teamtreehouse.com/HTML_Text.png",
+             badge: "https://achievement-images.teamtreehouse.com/HTML_Text.png",
              earned_date: "2013-01-29T14:43:11.000Z",
              courses: [{
                  title: "HTML",
@@ -225,9 +229,9 @@
              }]
          }, {
              id: 27,
-             name: "Lists",
+             title: "Lists",
              url: "https://teamtreehouse.com/library/html/lists",
-             icon_url: "https://achievement-images.teamtreehouse.com/HTML_Lists.png",
+             badge: "https://achievement-images.teamtreehouse.com/HTML_Lists.png",
              earned_date: "2013-01-29T15:26:42.000Z",
              courses: [{
                  title: "HTML",
@@ -240,9 +244,9 @@
              }]
          }, {
              id: 81,
-             name: "Links",
+             title: "Links",
              url: "https://teamtreehouse.com/library/html/links",
-             icon_url: "https://achievement-images.teamtreehouse.com/HTML_Links.png",
+             badge: "https://achievement-images.teamtreehouse.com/HTML_Links.png",
              earned_date: "2013-01-29T15:30:33.000Z",
              courses: [{
                  title: "HTML",
@@ -255,9 +259,9 @@
              }]
          }, {
              id: 77,
-             name: "Objects",
+             title: "Objects",
              url: "https://teamtreehouse.com/library/html/objects",
-             icon_url: "https://achievement-images.teamtreehouse.com/HTML_Objects.png",
+             badge: "https://achievement-images.teamtreehouse.com/HTML_Objects.png",
              earned_date: "2013-01-29T16:01:13.000Z",
              courses: [{
                  title: "HTML",
@@ -270,9 +274,9 @@
              }]
          }, {
              id: 38,
-             name: "Tables",
+             title: "Tables",
              url: "https://teamtreehouse.com/library/html/tables",
-             icon_url: "https://achievement-images.teamtreehouse.com/HTML_Tables.png",
+             badge: "https://achievement-images.teamtreehouse.com/HTML_Tables.png",
              earned_date: "2013-01-29T16:10:59.000Z",
              courses: [{
                  title: "HTML",
@@ -285,9 +289,9 @@
              }]
          }, {
              id: 29,
-             name: "Forms",
+             title: "Forms",
              url: "https://teamtreehouse.com/library/html/forms",
-             icon_url: "https://achievement-images.teamtreehouse.com/HTML_Forms.png",
+             badge: "https://achievement-images.teamtreehouse.com/HTML_Forms.png",
              earned_date: "2013-01-29T16:24:25.000Z",
              courses: [{
                  title: "HTML",
@@ -300,9 +304,9 @@
              }]
          }, {
              id: 180,
-             name: "Getting Started with CSS",
+             title: "Getting Started with CSS",
              url: "https://teamtreehouse.com/library/css-foundations/getting-started-with-css",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_DD_CSS_Stage1.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_DD_CSS_Stage1.png",
              earned_date: "2013-01-29T16:27:47.000Z",
              courses: [{
                  title: "CSS Foundations",
@@ -315,9 +319,9 @@
              }]
          }, {
              id: 181,
-             name: "Selectors",
+             title: "Selectors",
              url: "https://teamtreehouse.com/library/css-foundations/selectors",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_DD_CSS_Stage2.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_DD_CSS_Stage2.png",
              earned_date: "2013-01-29T17:00:28.000Z",
              courses: [{
                  title: "CSS Foundations",
@@ -330,9 +334,9 @@
              }]
          }, {
              id: 162,
-             name: "Introduction to Responsive Web Design",
+             title: "Introduction to Responsive Web Design",
              url: "https://teamtreehouse.com/library/build-a-responsive-website/introduction-to-responsive-web-design",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WebsiteIsland2_Stage1.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WebsiteIsland2_Stage1.png",
              earned_date: "2013-02-06T10:47:36.000Z",
              courses: [{
                  title: "Build a Responsive Website",
@@ -345,9 +349,9 @@
              }]
          }, {
              id: 167,
-             name: "Fluid Foundation",
+             title: "Fluid Foundation",
              url: "https://teamtreehouse.com/library/build-a-responsive-website/creating-a-fluid-foundation",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WebsiteIsland2_Stage2.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WebsiteIsland2_Stage2.png",
              earned_date: "2013-02-06T11:22:56.000Z",
              courses: [{
                  title: "Build a Responsive Website",
@@ -360,9 +364,9 @@
              }]
          }, {
              id: 173,
-             name: "Adaptive Design",
+             title: "Adaptive Design",
              url: "https://teamtreehouse.com/library/build-a-responsive-website/adaptive-design",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WebsiteIsland2_Stage3.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WebsiteIsland2_Stage3.png",
              earned_date: "2013-02-06T12:08:50.000Z",
              courses: [{
                  title: "Build a Responsive Website",
@@ -375,9 +379,9 @@
              }]
          }, {
              id: 196,
-             name: "Responsive Design",
+             title: "Responsive Design",
              url: "https://teamtreehouse.com/library/build-a-responsive-website/responsive-design",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WebsiteIsland2_Stage4.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WebsiteIsland2_Stage4.png",
              earned_date: "2013-02-06T13:00:20.000Z",
              courses: [{
                  title: "Build a Responsive Website",
@@ -390,9 +394,9 @@
              }]
          }, {
              id: 206,
-             name: "Advanced Techniques",
+             title: "Advanced Techniques",
              url: "https://teamtreehouse.com/library/build-a-responsive-website/advanced-techniques",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WebsiteIsland2_Stage5.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WebsiteIsland2_Stage5.png",
              earned_date: "2013-02-06T13:36:38.000Z",
              courses: [{
                  title: "Build a Responsive Website",
@@ -405,9 +409,9 @@
              }]
          }, {
              id: 213,
-             name: "Introduction to jQuery",
+             title: "Introduction to jQuery",
              url: "https://teamtreehouse.com/library/build-an-interactive-website/introduction-to-jquery",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WebsiteIsland3_Stage1.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WebsiteIsland3_Stage1.png",
              earned_date: "2013-02-07T14:40:56.000Z",
              courses: [{
                  title: "Build an Interactive Website",
@@ -420,9 +424,9 @@
              }]
          }, {
              id: 214,
-             name: "Form Validation and Manipulation",
+             title: "Form Validation and Manipulation",
              url: "https://teamtreehouse.com/library/build-an-interactive-website/form-validation-and-manipulation",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WebsiteIsland3_Stage2.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WebsiteIsland3_Stage2.png",
              earned_date: "2013-02-21T14:40:25.000Z",
              courses: [{
                  title: "Build an Interactive Website",
@@ -435,9 +439,9 @@
              }]
          }, {
              id: 187,
-             name: "Getting Started with PHP",
+             title: "Getting Started with PHP",
              url: "https://teamtreehouse.com/library/build-a-simple-php-application/getting-started-with-php",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_eCommerce_Stage1.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_eCommerce_Stage1.png",
              earned_date: "2013-02-21T16:16:58.000Z",
              courses: [{
                  title: "Build a Simple PHP Application",
@@ -450,9 +454,9 @@
              }]
          }, {
              id: 192,
-             name: "Creating the Menu and Footer",
+             title: "Creating the Menu and Footer",
              url: "https://teamtreehouse.com/library/build-a-simple-php-application/creating-the-menu-and-footer",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_eCommerce_Stage2.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_eCommerce_Stage2.png",
              earned_date: "2013-02-21T18:51:51.000Z",
              courses: [{
                  title: "Build a Simple PHP Application",
@@ -465,9 +469,9 @@
              }]
          }, {
              id: 193,
-             name: "Adding a Contact Form",
+             title: "Adding a Contact Form",
              url: "https://teamtreehouse.com/library/build-a-simple-php-application/adding-a-contact-form",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_eCommerce_Stage3.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_eCommerce_Stage3.png",
              earned_date: "2013-02-21T20:33:07.000Z",
              courses: [{
                  title: "Build a Simple PHP Application",
@@ -480,9 +484,9 @@
              }]
          }, {
              id: 208,
-             name: "Listing Inventory Items",
+             title: "Listing Inventory Items",
              url: "https://teamtreehouse.com/library/build-a-simple-php-application/listing-inventory-items",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_eCommerce_Stage4.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_eCommerce_Stage4.png",
              earned_date: "2013-06-10T06:07:05.000Z",
              courses: [{
                  title: "Build a Simple PHP Application",
@@ -495,9 +499,9 @@
              }]
          }, {
              id: 217,
-             name: "Integrating With Paypal",
+             title: "Integrating With Paypal",
              url: "https://teamtreehouse.com/library/build-a-simple-php-application/integrating-with-paypal",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_eCommerce_Stage5.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_eCommerce_Stage5.png",
              earned_date: "2013-06-20T21:48:41.000Z",
              courses: [{
                  title: "Build a Simple PHP Application",
@@ -510,9 +514,9 @@
              }]
          }, {
              id: 238,
-             name: "Working with PHP Functions",
+             title: "Working with PHP Functions",
              url: "https://teamtreehouse.com/library/build-a-simple-php-application/working-with-functions",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_eCommerce_Stage7.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_eCommerce_Stage7.png",
              earned_date: "2013-06-21T20:54:06.000Z",
              courses: [{
                  title: "Build a Simple PHP Application",
@@ -525,9 +529,9 @@
              }]
          }, {
              id: 912,
-             name: "Beginning HTML and CSS",
+             title: "Beginning HTML and CSS",
              url: "https://teamtreehouse.com/library/how-to-make-a-website/beginning-html-and-css",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_html_howtomakeawebsite_stage01.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_html_howtomakeawebsite_stage01.png",
              earned_date: "2014-07-27T14:29:26.000Z",
              courses: [{
                  title: "How to Make a Website",
@@ -540,9 +544,9 @@
              }]
          }, {
              id: 922,
-             name: "HTML First",
+             title: "HTML First",
              url: "https://teamtreehouse.com/library/how-to-make-a-website/html-first",
-             icon_url: "https://achievement-images.teamtreehouse.com/bagdes_html_howtobuildawebsite_stage02.png",
+             badge: "https://achievement-images.teamtreehouse.com/bagdes_html_howtobuildawebsite_stage02.png",
              earned_date: "2014-07-27T14:37:21.000Z",
              courses: [{
                  title: "How to Make a Website",
@@ -555,9 +559,9 @@
              }]
          }, {
              id: 932,
-             name: "Creating HTML Content",
+             title: "Creating HTML Content",
              url: "https://teamtreehouse.com/library/how-to-make-a-website/creating-html-content",
-             icon_url: "https://achievement-images.teamtreehouse.com/bagdes_html_howtobuildawebsite_stage03.png",
+             badge: "https://achievement-images.teamtreehouse.com/bagdes_html_howtobuildawebsite_stage03.png",
              earned_date: "2014-07-27T14:49:50.000Z",
              courses: [{
                  title: "How to Make a Website",
@@ -570,9 +574,9 @@
              }]
          }, {
              id: 942,
-             name: "CSS: Cascading Style Sheets",
+             title: "CSS: Cascading Style Sheets",
              url: "https://teamtreehouse.com/library/how-to-make-a-website/css-cascading-style-sheets",
-             icon_url: "https://achievement-images.teamtreehouse.com/bagdes_html_howtobuildawebsite_stage04.png",
+             badge: "https://achievement-images.teamtreehouse.com/bagdes_html_howtobuildawebsite_stage04.png",
              earned_date: "2014-07-27T14:59:38.000Z",
              courses: [{
                  title: "How to Make a Website",
@@ -585,9 +589,9 @@
              }]
          }, {
              id: 952,
-             name: "Customizing Colors and Fonts",
+             title: "Customizing Colors and Fonts",
              url: "https://teamtreehouse.com/library/how-to-make-a-website/customizing-colors-and-fonts",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_html_howtomakeawebsite_stage05.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_html_howtomakeawebsite_stage05.png",
              earned_date: "2014-07-27T15:09:35.000Z",
              courses: [{
                  title: "How to Make a Website",
@@ -600,9 +604,9 @@
              }]
          }, {
              id: 962,
-             name: "Styling Web Pages and Navigation",
+             title: "Styling Web Pages and Navigation",
              url: "https://teamtreehouse.com/library/how-to-make-a-website/styling-web-pages-and-navigation",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_html_howtomakeawebsite_stage06.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_html_howtomakeawebsite_stage06.png",
              earned_date: "2014-07-27T15:21:25.000Z",
              courses: [{
                  title: "How to Make a Website",
@@ -615,9 +619,9 @@
              }]
          }, {
              id: 972,
-             name: "Adding Pages to a Website",
+             title: "Adding Pages to a Website",
              url: "https://teamtreehouse.com/library/how-to-make-a-website/adding-pages-to-a-website",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_html_howtomakeawebsite_stage07.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_html_howtomakeawebsite_stage07.png",
              earned_date: "2014-07-27T15:30:43.000Z",
              courses: [{
                  title: "How to Make a Website",
@@ -630,9 +634,9 @@
              }]
          }, {
              id: 982,
-             name: "Responsive Web Design and Testing",
+             title: "Responsive Web Design and Testing",
              url: "https://teamtreehouse.com/library/how-to-make-a-website/responsive-web-design-and-testing",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_html_howtomakeawebsite_stage08.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_html_howtomakeawebsite_stage08.png",
              earned_date: "2014-07-27T16:07:20.000Z",
              courses: [{
                  title: "How to Make a Website",
@@ -645,9 +649,9 @@
              }]
          }, {
              id: 992,
-             name: "Sharing a Website",
+             title: "Sharing a Website",
              url: "https://teamtreehouse.com/library/how-to-make-a-website/sharing-a-website",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_html_howtomakeawebsite_stage09.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_html_howtomakeawebsite_stage09.png",
              earned_date: "2014-07-27T16:09:08.000Z",
              courses: [{
                  title: "How to Make a Website",
@@ -660,9 +664,9 @@
              }]
          }, {
              id: 1002,
-             name: "Debugging HTML and CSS Problems",
+             title: "Debugging HTML and CSS Problems",
              url: "https://teamtreehouse.com/library/how-to-make-a-website/debugging-html-and-css-problems",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_html_howtomakeawebsite_stage10.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_html_howtomakeawebsite_stage10.png",
              earned_date: "2014-07-27T16:12:00.000Z",
              courses: [{
                  title: "How to Make a Website",
@@ -675,9 +679,9 @@
              }]
          }, {
              id: 492,
-             name: "Installing Wordpress",
+             title: "Installing Wordpress",
              url: "https://teamtreehouse.com/library/how-to-make-a-website-with-wordpress/installing-wordpress",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WP_BuildSites_Stage1.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WP_BuildSites_Stage1.png",
              earned_date: "2014-07-27T16:20:32.000Z",
              courses: [{
                  title: "How to Make a Website with WordPress",
@@ -690,9 +694,9 @@
              }]
          }, {
              id: 502,
-             name: "WordPress Themes",
+             title: "WordPress Themes",
              url: "https://teamtreehouse.com/library/how-to-make-a-website-with-wordpress/wordpress-themes",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WP_BuildSites_Stage2.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WP_BuildSites_Stage2.png",
              earned_date: "2014-07-27T16:23:50.000Z",
              courses: [{
                  title: "How to Make a Website with WordPress",
@@ -705,9 +709,9 @@
              }]
          }, {
              id: 512,
-             name: "Customizing WordPress Themes",
+             title: "Customizing WordPress Themes",
              url: "https://teamtreehouse.com/library/how-to-make-a-website-with-wordpress/customizing-wordpress-themes",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WP_BuildSites_Stage3.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WP_BuildSites_Stage3.png",
              earned_date: "2014-07-27T16:26:55.000Z",
              courses: [{
                  title: "How to Make a Website with WordPress",
@@ -720,9 +724,9 @@
              }]
          }, {
              id: 522,
-             name: "Custom Post Types and Fields",
+             title: "Custom Post Types and Fields",
              url: "https://teamtreehouse.com/library/how-to-make-a-website-with-wordpress/custom-post-types-and-fields-in-wordpress",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WP_BuildSites_Stage4.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WP_BuildSites_Stage4.png",
              earned_date: "2014-07-27T16:32:28.000Z",
              courses: [{
                  title: "How to Make a Website with WordPress",
@@ -735,9 +739,9 @@
              }]
          }, {
              id: 542,
-             name: "Widgets and Custom Menus",
+             title: "Widgets and Custom Menus",
              url: "https://teamtreehouse.com/library/how-to-make-a-website-with-wordpress/wordpress-widgets-and-custom-menus",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WP_BuildSites_Stage5.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WP_BuildSites_Stage5.png",
              earned_date: "2014-07-27T17:10:22.000Z",
              courses: [{
                  title: "How to Make a Website with WordPress",
@@ -750,9 +754,9 @@
              }]
          }, {
              id: 552,
-             name: "WordPress Plugin Best Practices",
+             title: "WordPress Plugin Best Practices",
              url: "https://teamtreehouse.com/library/how-to-make-a-website-with-wordpress/plugin-best-practices",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WP_BuildSites_Stage6.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WP_BuildSites_Stage6.png",
              earned_date: "2014-07-27T21:18:08.000Z",
              courses: [{
                  title: "How to Make a Website with WordPress",
@@ -765,9 +769,9 @@
              }]
          }, {
              id: 812,
-             name: "Introduction to jQuery",
+             title: "Introduction to jQuery",
              url: "https://teamtreehouse.com/library/jquery-basics/introduction-to-jquery",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_JavaScript_jQueryBasics_Stage1.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_JavaScript_jQueryBasics_Stage1.png",
              earned_date: "2014-07-27T21:49:17.000Z",
              courses: [{
                  title: "jQuery Basics",
@@ -780,9 +784,9 @@
              }]
          }, {
              id: 822,
-             name: "Creating a Spoiler Revealer",
+             title: "Creating a Spoiler Revealer",
              url: "https://teamtreehouse.com/library/jquery-basics/creating-a-spoiler-revealer",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_JavaScript_jQueryBasics_Stage2.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_JavaScript_jQueryBasics_Stage2.png",
              earned_date: "2014-07-27T22:05:34.000Z",
              courses: [{
                  title: "jQuery Basics",
@@ -795,9 +799,9 @@
              }]
          }, {
              id: 832,
-             name: "Creating a Simple Lightbox",
+             title: "Creating a Simple Lightbox",
              url: "https://teamtreehouse.com/library/jquery-basics/creating-a-simple-lightbox",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_JavaScript_jQueryBasics_Stage3.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_JavaScript_jQueryBasics_Stage3.png",
              earned_date: "2014-07-27T22:32:53.000Z",
              courses: [{
                  title: "jQuery Basics",
@@ -810,9 +814,9 @@
              }]
          }, {
              id: 842,
-             name: "Creating a Mobile Drop Down Menu",
+             title: "Creating a Mobile Drop Down Menu",
              url: "https://teamtreehouse.com/library/jquery-basics/creating-a-mobile-drop-down-menu",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_JavaScript_jQueryBasics_Stage4.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_JavaScript_jQueryBasics_Stage4.png",
              earned_date: "2014-07-27T23:45:38.000Z",
              courses: [{
                  title: "jQuery Basics",
@@ -825,9 +829,9 @@
              }]
          }, {
              id: 852,
-             name: "Creating a Password Confirmation Form",
+             title: "Creating a Password Confirmation Form",
              url: "https://teamtreehouse.com/library/jquery-basics/creating-a-password-confirmation-form",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_JavaScript_jQueryBasics_Stage5.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_JavaScript_jQueryBasics_Stage5.png",
              earned_date: "2014-07-28T01:27:36.000Z",
              courses: [{
                  title: "jQuery Basics",
@@ -840,9 +844,9 @@
              }]
          }, {
              id: 862,
-             name: "Creating a Simple Drawing Application",
+             title: "Creating a Simple Drawing Application",
              url: "https://teamtreehouse.com/library/jquery-basics/creating-a-simple-drawing-application",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_JavaScript_jQueryBasics_Stage6.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_JavaScript_jQueryBasics_Stage6.png",
              earned_date: "2014-07-28T02:35:58.000Z",
              courses: [{
                  title: "jQuery Basics",
@@ -855,9 +859,9 @@
              }]
          }, {
              id: 232,
-             name: "Simple PHP Application: Wrapping Up The Project",
+             title: "Simple PHP Application: Wrapping Up The Project",
              url: "https://teamtreehouse.com/library/build-a-simple-php-application/wrapping-up-the-project",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_eCommerce_Stage6.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_eCommerce_Stage6.png",
              earned_date: "2014-07-29T20:53:10.000Z",
              courses: [{
                  title: "Build a Simple PHP Application",
@@ -870,9 +874,9 @@
              }]
          }, {
              id: 632,
-             name: "Local WordPress Development",
+             title: "Local WordPress Development",
              url: "https://teamtreehouse.com/library/local-wordpress-development/local-wordpress-development",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WP_Local_Stage1.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WP_Local_Stage1.png",
              earned_date: "2014-07-29T20:58:01.000Z",
              courses: [{
                  title: "Local WordPress Development",
@@ -885,9 +889,9 @@
              }]
          }, {
              id: 272,
-             name: "Content Strategy with WordPress",
+             title: "Content Strategy with WordPress",
              url: "https://teamtreehouse.com/library/how-to-build-a-wordpress-theme/content-strategy-with-wordpress",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WP_Theme_Stage1.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WP_Theme_Stage1.png",
              earned_date: "2014-08-02T20:46:20.000Z",
              courses: [{
                  title: "How to Build a WordPress Theme",
@@ -900,9 +904,9 @@
              }]
          }, {
              id: 275,
-             name: "WordPress Theme Templates",
+             title: "WordPress Theme Templates",
              url: "https://teamtreehouse.com/library/how-to-build-a-wordpress-theme/wordpress-theme-templates",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WP_Theme_Stage2.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WP_Theme_Stage2.png",
              earned_date: "2014-08-02T22:00:12.000Z",
              courses: [{
                  title: "How to Build a WordPress Theme",
@@ -915,9 +919,9 @@
              }]
          }, {
              id: 277,
-             name: "WordPress Theme Functions",
+             title: "WordPress Theme Functions",
              url: "https://teamtreehouse.com/library/how-to-build-a-wordpress-theme/wordpress-theme-functions",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WP_Theme_Stage3.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WP_Theme_Stage3.png",
              earned_date: "2014-08-02T22:42:41.000Z",
              courses: [{
                  title: "How to Build a WordPress Theme",
@@ -930,9 +934,9 @@
              }]
          }, {
              id: 287,
-             name: "Preparing to Code WordPress Templates",
+             title: "Preparing to Code WordPress Templates",
              url: "https://teamtreehouse.com/library/how-to-build-a-wordpress-theme/preparing-to-code-wordpress-templates",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WP_Theme_Stage5.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WP_Theme_Stage5.png",
              earned_date: "2014-08-02T23:44:51.000Z",
              courses: [{
                  title: "How to Build a WordPress Theme",
@@ -945,9 +949,9 @@
              }]
          }, {
              id: 280,
-             name: "Converting Static HTML into WordPress Templates ",
+             title: "Converting Static HTML into WordPress Templates ",
              url: "https://teamtreehouse.com/library/how-to-build-a-wordpress-theme/converting-static-html-into-wordpress-templates",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WP_Theme_Stage4.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WP_Theme_Stage4.png",
              earned_date: "2014-08-03T00:40:07.000Z",
              courses: [{
                  title: "How to Build a WordPress Theme",
@@ -960,9 +964,9 @@
              }]
          }, {
              id: 295,
-             name: "Extending WordPress Template Functionality",
+             title: "Extending WordPress Template Functionality",
              url: "https://teamtreehouse.com/library/how-to-build-a-wordpress-theme/extending-wordpress-template-functionality",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WP_Theme_Stage6.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WP_Theme_Stage6.png",
              earned_date: "2014-08-03T14:49:05.000Z",
              courses: [{
                  title: "How to Build a WordPress Theme",
@@ -975,9 +979,9 @@
              }]
          }, {
              id: 319,
-             name: "WordPress and Forms",
+             title: "WordPress and Forms",
              url: "https://teamtreehouse.com/library/how-to-build-a-wordpress-theme/wordpress-and-forms",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WP_Theme_Stage7.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WP_Theme_Stage7.png",
              earned_date: "2014-08-03T14:58:43.000Z",
              courses: [{
                  title: "How to Build a WordPress Theme",
@@ -990,9 +994,9 @@
              }]
          }, {
              id: 320,
-             name: "Launching a WordPress Site",
+             title: "Launching a WordPress Site",
              url: "https://teamtreehouse.com/library/how-to-build-a-wordpress-theme/launching-a-wordpress-site",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WP_Theme_Stage8.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WP_Theme_Stage8.png",
              earned_date: "2014-08-03T15:24:49.000Z",
              courses: [{
                  title: "How to Build a WordPress Theme",
@@ -1005,9 +1009,9 @@
              }]
          }, {
              id: 355,
-             name: "How WordPress Plugins Work",
+             title: "How WordPress Plugins Work",
              url: "https://teamtreehouse.com/library/how-to-build-a-wordpress-plugin/how-wordpress-plugins-work",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WP_Plugin_Stage1-56.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WP_Plugin_Stage1-56.png",
              earned_date: "2014-08-03T16:34:17.000Z",
              courses: [{
                  title: "How to Build a WordPress Plugin",
@@ -1020,9 +1024,9 @@
              }]
          }, {
              id: 356,
-             name: "Building a WordPress Plugin Settings Page",
+             title: "Building a WordPress Plugin Settings Page",
              url: "https://teamtreehouse.com/library/how-to-build-a-wordpress-plugin/building-a-wordpress-plugin-settings-page",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WP_Plugin_Stage2-57.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WP_Plugin_Stage2-57.png",
              earned_date: "2014-08-03T21:26:27.000Z",
              courses: [{
                  title: "How to Build a WordPress Plugin",
@@ -1035,9 +1039,9 @@
              }]
          }, {
              id: 357,
-             name: "Connecting WordPress Plugins with 3rd Party APIs",
+             title: "Connecting WordPress Plugins with 3rd Party APIs",
              url: "https://teamtreehouse.com/library/how-to-build-a-wordpress-plugin/connecting-wordpress-plugins-with-3rd-party-apis",
-             icon_url: "https://achievement-images.teamtreehouse.com/badges_WP_Plugin_Stage3-58.png",
+             badge: "https://achievement-images.teamtreehouse.com/badges_WP_Plugin_Stage3-58.png",
              earned_date: "2014-08-03T22:25:17.000Z",
              courses: [{
                  title: "How to Build a WordPress Plugin",
@@ -1050,7 +1054,9 @@
              }]
          }]
      }, {
-         name: 'Udacity',
+         school: 'Udacity',
+         url: 'http://udacity.com',
+         dates: '',
          courses: []
      }],
      display: displayEducation
@@ -1112,7 +1118,6 @@
      display: displayProjects
  };
 
- var dataPlaceholder = '%data%';
  var $footerContacts = $('#footerContacts');
  var $workExp = $('#workExperience');
  var $projects = $('#projects');
@@ -1133,7 +1138,7 @@
  }
 
  function insertData(template, text) {
-     return template.replace(dataPlaceholder, text);
+     return template.replace(/\%data\%/g, text);
  }
 
  function displayWork() {
@@ -1201,13 +1206,19 @@
 
  function displayEducation() {
      education.schools.forEach(addSchool);
-    $('#online-courses').append(HTMLcodeSchool);
-     education.onlineCourses[0].courses.forEach(function(course) {
-         var $courseHTML = $(HTMLcodeSchoolCourse);
-         var title = insertData(HTMLonlineUrl, course.url) + insertData(HTMLonlineTitle, course.title);
-         var badge = insertData(HTMLonlineBadge, course.badge);
-         $courseHTML.append([badge, title].join(''));
-         $('#codeschool-courses').append($courseHTML);
+     education.onlineCourses.forEach(function(onlineSchool) {
+         $('#online-courses').append(insertData(HTMLonlineSchool, onlineSchool.school));
+         $('.online-course:last').append(insertData(HTMLonlineSchoolUrl, onlineSchool.url));
+         $('.online-course:last').append(insertData(HTMLonlineDates, onlineSchool.dates));
+         onlineSchool.courses.forEach(function(course) {
+             var $courseHTML = $(HTMLcodeSchoolCourse);
+             var title = insertData(HTMLonlineUrl, course.url) + insertData(HTMLonlineTitle, course.title);
+             var badge = insertData(HTMLonlineBadge, course.badge);
+             $courseHTML.append([badge, title].join(''));
+             $('.onlineschool-courses:last').append($courseHTML);
+         });
+         $('.onlineschool-courses:last').prepend(HTMLonlineCoursesPanLeft);
+         $('.onlineschool-courses:last').append(HTMLonlineCoursesPanRight);
      });
  }
 
@@ -1221,3 +1232,12 @@
  }
 
  $('#mapDiv').append(googleMap);
+
+ $('.onlineschool-courses').on('mouseover', function() {
+     $(this).find('.pan-left').show();
+     $(this).find('.pan-right').show();
+ });
+ $('.onlineschool-courses').on('mouseleave', function() {
+     $(this).find('.pan-left').hide();
+     $(this).find('.pan-right').hide();
+ });
