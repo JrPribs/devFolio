@@ -8,7 +8,7 @@
          mobile: '757-319-5689',
          twitter: '@JohnPribesh'
      },
-     bioPic: 'img/smalls/meCropped-small@2x.jpg',
+     bioPic: '../img/smalls/meCropped-small@2x.jpg',
      skills: ['Javascript', 'HTML5', 'CSS3', 'Sass', 'Bash'],
      welcomeMsg: 'Developer / Designer / Innovator',
      display: displayBio
@@ -1107,7 +1107,7 @@
          title: 'Grace Street Grill Website',
          dates: '2013',
          description: 'Static website built using EmberJS',
-         images: ['img/smalls/gsg-site1-small@2x.png']
+         images: ['../img/smalls/gsg-site1-small@2x.png']
      }],
      display: displayProjects
  };

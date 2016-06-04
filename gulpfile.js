@@ -70,13 +70,13 @@ gulp.task('images', function() {
 });
 
 var sourcePaths = {
-    styles: ['scss/**/*.scss'],
-	js: ['js/**/*.js'],
+    styles: ['styles/*.scss', 'resume/styles/*.scss'],
+	js: ['**/js/*.js'],
     views: ['**/*.html']
 };
 
 var distPaths = {
-    styles: 'css'
+    styles: './'
 };
 
 var server = {
@@ -85,7 +85,7 @@ var server = {
 };
 
 gulp.task('sass', function() {
-    gulp.src(sourcePaths.styles)
+    gulp.src(sourcePaths.styles, {base: './'})
         .pipe(plumber())
         .pipe(sass())
         .pipe(gulp.dest(distPaths.styles));

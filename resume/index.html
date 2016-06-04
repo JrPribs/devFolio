@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Resume</title>
-    <link href="css/resume.css" rel="stylesheet">
+    <link href="styles/resume.css" rel="stylesheet">
     <script src="js/jQuery.js"></script>
     <script src="js/helper.js"></script>
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
@@ -25,6 +25,7 @@
         </div>
         <div id="online-courses" class="section">
             <h2>Online Courses</h2>
+            <hr>
         </div>
         <div id="projects" class="section">
             <h2>Projects</h2>
@@ -54,6 +55,7 @@
         }
         if (document.getElementsByClassName('education-entry').length === 0) {
             document.getElementById('education').style.display = 'none';
+            document.getElementById('online-courses').style.display = 'none';
         }
         if (document.getElementsByClassName('flex-item').length === 0) {
             document.getElementById('lets-connect').style.display = 'none';
