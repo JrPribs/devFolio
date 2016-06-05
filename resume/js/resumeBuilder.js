@@ -8,9 +8,9 @@
          mobile: '757-319-5689',
          twitter: '@JohnPribesh'
      },
-     bioPic: '../img/smalls/meCropped-small@2x.jpg',
+     biopic: '../img/smalls/meCropped-small@2x.jpg',
      skills: ['Javascript', 'AngularJS', 'NodeJS', 'HTML5', 'CSS3', 'Sass', 'Bash'],
-     welcomeMsg: 'Developer, designer, innovator, & solution to your problems!'
+     welcomeMessage: 'Developer, designer, innovator, & solution to your problems!'
  };
 
  var education = {
@@ -18,15 +18,15 @@
          dates: '2015 - 2019',
          degree: 'BS',
          location: 'Salt Lake City, UT',
-         major: 'Information Technology',
-         minor: 'Software Development',
+         majors: ['I.T. w/ Concentration in Software Development'],
          name: 'Western Governor\'s University',
          url: 'http://www.wgu.edu'
      }],
      onlineCourses: [{
          school: 'Codeschool',
+         title: 'CodeSchool.com',
          url: 'http://www.codeschool.com',
-         dates: '7/1/2012 - Current',
+         date: '7/1/2012 - Current',
          profileUrl: 'https://www.codeschool.com/users/jpribesh',
          courses: [{
              title: "Mastering GitHub",
@@ -111,9 +111,10 @@
          }]
      }, {
          school: 'TeamTreehouse',
+         title: 'Team Treehouse',
          url: 'https://teamtreehouse.com',
          profileUrl: 'https://teamtreehouse.com/jonathanpribesh',
-         dates: '01/28/2013 - Current',
+         date: '01/28/2013 - Current',
          courses: [{
              id: 49,
              title: "Newbie",
@@ -1054,8 +1055,9 @@
          }]
      }, {
          school: 'Udacity',
+         title: 'Front-End Web Developer Nanodegree',
          url: 'http://udacity.com',
-         dates: '05/06/2016 - Current',
+         date: '05/06/2016 - Current',
          courses: []
      }]
  };
@@ -1168,8 +1170,8 @@
      });
 
      // Add bio info
-     $headerMain.append(insertData(HTMLbioPic, bio.bioPic));
-     $headerMain.append(insertData(HTMLwelcomeMsg, bio.welcomeMsg));
+     $headerMain.append(insertData(HTMLbioPic, bio.biopic));
+     $headerMain.append(insertData(HTMLwelcomeMsg, bio.welcomeMessage));
      $headerMain.append(HTMLskillsStart);
      bio.skills.forEach(function(skill) {
          $('#skills').append(insertData(HTMLskills, skill));
@@ -1181,7 +1183,7 @@
      education.onlineCourses.forEach(function(onlineSchool) {
          $('#online-courses').append(insertData(HTMLonlineSchool, onlineSchool.school));
          $('.online-course:last').append(insertData(HTMLonlineSchoolUrl, onlineSchool.url));
-         $('.online-course:last').append(insertData(HTMLonlineDates, onlineSchool.dates));
+         $('.online-course:last').append(insertData(HTMLonlineDates, onlineSchool.date));
          onlineSchool.courses.forEach(function(course) {
              var $courseHTML = $(HTMLcodeSchoolCourse);
              var title = insertData(HTMLonlineUrl, course.url) + insertData(HTMLonlineTitle, course.title);
@@ -1196,7 +1198,7 @@
          var name = insertData(HTMLschoolName, school.name) + insertData(HTMLschoolDegree, school.degree);
          var dates = insertData(HTMLschoolDates, school.dates);
          var location = insertData(HTMLschoolLocation, school.location);
-         var major = insertData(HTMLschoolMajor, school.major);
+         var major = insertData(HTMLschoolMajor, school.majors[0]);
          $('.education-entry:last').append([name, dates, location, major].join(''));
      }
  };
