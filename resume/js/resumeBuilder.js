@@ -10,8 +10,7 @@
      },
      bioPic: '../img/smalls/meCropped-small@2x.jpg',
      skills: ['Javascript', 'AngularJS', 'NodeJS', 'HTML5', 'CSS3', 'Sass', 'Bash'],
-     welcomeMsg: 'Developer, designer, innovator, & solution to your problems!',
-     display: displayBio
+     welcomeMsg: 'Developer, designer, innovator, & solution to your problems!'
  };
 
  var education = {
@@ -1058,8 +1057,7 @@
          url: 'http://udacity.com',
          dates: '05/06/2016 - Current',
          courses: []
-     }],
-     display: displayEducation
+     }]
  };
  var work = {
      jobs: [{
@@ -1104,8 +1102,7 @@
          location: 'Virginia Beach, VA',
          title: 'Tier1A (Technical Support Rep)',
          description: 'The Tier1 position was an entry-level position providing technical support in a LAMP hosting environment. The position required working knowledge of the Linux CLI, all popular CMS frameworks, and common coding languages.'
-     }],
-     display: displayWork
+     }]
  };
 
  var projects = {
@@ -1114,34 +1111,10 @@
          dates: '2013',
          description: 'Static website built using EmberJS',
          images: ['../img/smalls/gsg-site1-small@2x.png']
-     }],
-     display: displayProjects
+     }]
  };
 
- var $footerContacts = $('#footerContacts');
- var $workExp = $('#workExperience');
- var $projects = $('#projects');
- var $education = $('#education');
-
- bio.display();
-
- if (work.jobs.length > 0) {
-     work.display();
- }
-
- if (education.schools.length > 0) {
-     education.display();
- }
-
- if (projects.projects.length > 0) {
-     projects.display();
- }
-
- function insertData(template, text) {
-     return template.replace(/\%data\%/g, text);
- }
-
- function displayWork() {
+ work.display = function() {
      work.jobs.forEach(function(job) {
          $workExp.append(HTMLworkStart);
          var $workTop = $(HTMLworkTop);
@@ -1155,9 +1128,9 @@
          $('.work-entry:last').append(employerInfo);
          $('.work-entry:last').append(insertData(HTMLworkDescription, job.description));
      });
- }
+ };
 
- function displayProjects() {
+ projects.display = function() {
      projects.projects.forEach(function(project) {
          $projects.append(HTMLprojectStart);
          $('.project-entry:last').append(insertData(HTMLprojectTitle, project.title));
@@ -1169,9 +1142,9 @@
              });
          }
      });
- }
+ };
 
- function displayBio() {
+ bio.display = function() {
      var $header = $('#header');
      var $topContacts = $('#topContacts');
      var $headerTop = $('#header-top');
@@ -1201,9 +1174,9 @@
      bio.skills.forEach(function(skill) {
          $('#skills').append(insertData(HTMLskills, skill));
      });
- }
+ };
 
- function displayEducation() {
+ education.display = function() {
      education.schools.forEach(addSchool);
      education.onlineCourses.forEach(function(onlineSchool) {
          $('#online-courses').append(insertData(HTMLonlineSchool, onlineSchool.school));
@@ -1217,15 +1190,37 @@
              $('.onlineschool-courses:last').append($courseHTML);
          });
      });
- }
 
- function addSchool(school) {
-     $education.append(HTMLschoolStart);
-     var name = insertData(HTMLschoolName, school.name) + insertData(HTMLschoolDegree, school.degree);
-     var dates = insertData(HTMLschoolDates, school.dates);
-     var location = insertData(HTMLschoolLocation, school.location);
-     var major = insertData(HTMLschoolMajor, school.major);
-     $('.education-entry:last').append([name, dates, location, major].join(''));
+     function addSchool(school) {
+         $education.append(HTMLschoolStart);
+         var name = insertData(HTMLschoolName, school.name) + insertData(HTMLschoolDegree, school.degree);
+         var dates = insertData(HTMLschoolDates, school.dates);
+         var location = insertData(HTMLschoolLocation, school.location);
+         var major = insertData(HTMLschoolMajor, school.major);
+         $('.education-entry:last').append([name, dates, location, major].join(''));
+     }
+ };
+
+ function insertData(template, text) {
+     return template.replace(/\%data\%/g, text);
  }
 
  $('#mapDiv').append(googleMap);
+ var $footerContacts = $('#footerContacts');
+ var $workExp = $('#workExperience');
+ var $projects = $('#projects');
+ var $education = $('#education');
+
+ bio.display();
+
+ if (work.jobs.length > 0) {
+     work.display();
+ }
+
+ if (education.schools.length > 0) {
+     education.display();
+ }
+
+ if (projects.projects.length > 0) {
+     projects.display();
+ }

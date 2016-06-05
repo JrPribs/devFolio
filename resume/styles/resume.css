@@ -87,8 +87,7 @@ h2.accent-bg {
   padding: 2.5% 5%; }
 
 .section {
-  border-bottom: 1px solid #B6B6B6;
-  padding-bottom: 2em; }
+  border-bottom: 1px solid #B6B6B6; }
 
 #header li,
 #header p {
@@ -115,6 +114,9 @@ h2.accent-bg {
 #footerContacts .accent-text,
 #topContacts .accent-text {
   font-size: 1.25em; }
+
+#education {
+  padding-bottom: 2em; }
 
 .work-entry {
   margin: 1em;

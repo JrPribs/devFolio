@@ -116,7 +116,6 @@ h2.accent-bg {
 
 .section {
     border-bottom: 1px solid $divider-color;
-    padding-bottom: 2em;
 }
 
 #header {
@@ -154,6 +153,9 @@ h2.accent-bg {
     }
 }
 
+#education {
+    padding-bottom: 2em;
+}
 .work-entry {
     margin: 1em;
     margin-bottom: 2em;
