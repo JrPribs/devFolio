@@ -18,20 +18,23 @@ ul {
   color: #212121; }
 
 h1 {
-  font-variant: small-caps;
   font-size: 40px;
   color: #03A9F4;
-  line-height: 48px;
-  display: inline; }
+  line-height: 48px; }
+  h1 small {
+    font-size: .5em;
+    margin: 0 1em;
+    color: #212121; }
 
 h2 {
-  color: #03A9F4;
+  color: #FFFFFF;
+  text-shadow: 0 1px 2px #212121;
   font-size: 30px;
   line-height: 29px;
   padding: 10px 5%; }
 
 h3 {
-  font-style: italic;
+  color: #FFFFFF;
   font-size: 22px;
   line-height: 22px; }
 
@@ -48,12 +51,16 @@ h2.accent-bg {
 
 .primary-bg {
   background-color: #607D8B; }
+  .primary-bg h2 {
+    color: #FFFFFF; }
 
 .primary-bg-text {
   color: #FFFFFF; }
 
 .light-bg {
   background-color: #CFD8DC; }
+  .light-bg h3 {
+    color: #212121; }
 
 .dark-bg {
   background-color: #455A64; }
@@ -80,22 +87,8 @@ h2.accent-bg {
   padding: 2.5% 5%; }
 
 .section {
-  border-bottom: 1px solid #B6B6B6; }
-
-.pan-left,
-.pan-right {
-  display: none;
-  position: absolute;
-  overflow: hidden;
-  height: 100%;
-  top: 0;
-  background-color: #455A64; }
-
-.pan-left {
-  left: 0; }
-
-.pan-right {
-  right: 0; }
+  border-bottom: 1px solid #B6B6B6;
+  padding-bottom: 2em; }
 
 #header li,
 #header p {
@@ -109,7 +102,12 @@ h2.accent-bg {
 
 #skills-h3 {
   color: #03A9F4;
-  font-variant: small-caps; }
+  margin-top: .5em; }
+
+#skills {
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column; }
 
 #footerContacts {
   background-color: #455A64; }
@@ -158,10 +156,9 @@ a {
   text-decoration: none; }
 
 .welcome-message {
-  font-style: italic;
   font-size: 18px;
-  color: #b5b5b7;
-  line-height: 28px; }
+  line-height: 28px;
+  margin-bottom: 2em; }
 
 ul {
   list-style-type: none; }
@@ -186,18 +183,20 @@ span {
   -moz-flex-direction: column;
   -webkit-flex-direction: column;
   flex-direction: column;
-  padding-bottom: 1em;
-  margin-top: 2em; }
+  padding: 1em; }
   #online-courses .section {
     margin: 0 5%; }
   #online-courses .online-course {
-    padding: 1% 5%; }
+    padding: 1% 6%; }
   #online-courses .onlineschool-courses {
     position: relative;
     display: flex;
     -moz-flex-direction: row;
     -webkit-flex-direction: row;
     flex-direction: row;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
     overflow-x: scroll;
     margin: 0 7.5%; }
     #online-courses .onlineschool-courses .onlineschool-course {
@@ -208,17 +207,15 @@ span {
       margin: 5px;
       text-align: center;
       flex: 1;
-      max-height: 175px;
-      min-width: 150px; }
-      #online-courses .onlineschool-courses .onlineschool-course .onlineschool-title {
-        margin: 5px;
-        max-height: 30px; }
+      max-height: 150px;
+      min-width: 115px;
+      overflow: hidden; }
       #online-courses .onlineschool-courses .onlineschool-course a {
-        margin-top: 10px;
+        font-size: 1em;
         display: block; }
       #online-courses .onlineschool-courses .onlineschool-course img {
         padding: 0;
-        max-height: 100px; }
+        max-height: 75px; }
 
 #map {
   display: block;

@@ -1,5 +1,5 @@
-var HTMLheaderName = '<h1>%data%</h1>';
-var HTMLheaderRole = '<span>%data%</span>';
+var HTMLheaderName = '<h1>%data%';
+var HTMLheaderRole = '<small>%data%</small></h1>';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="accent-text">%contact%</span><span>%data%</span></li>';
 var HTMLmobile = '<li class="flex-item"><span class="accent-text">mobile</span><span>%data%</span></li>';
@@ -37,18 +37,15 @@ var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<div>Major: %data%</div>';
 
 var HTMLonlineClasses = '<div id="online-courses"><h3>Online Classes</h3></div>';
-var HTMLonlineUrl = '<a href="%data%">';
+var HTMLonlineUrl = '<a href="%data%" target="_blank">';
 var HTMLonlineTitle = '%data%</a>';
-var HTMLonlineSchoolUrl = '<h5><a href="%data%">%data%</a></h5>';
+var HTMLonlineSchoolUrl = ' <small><a href="%data%" target="_blank">%data%</a></small>';
 var HTMLonlineSchool = '<h3 class="online-course">%data%</h3><div class="onlineschool-courses"></div>';
 var HTMLcodeSchoolCourse = '<div class="onlineschool-course"></div>';
-var HTMLonlineDates = '<div class="date-text">%data%</div>';
+var HTMLonlineDates = '<div class="date-text">Dates: %data%</div>';
 var HTMLonlineURL = '<div class="onlineschool-title"><a href="#">%data%</a>';
 var HTMLonlineBadge = '<img src="%data%">';
-var HTMLonlineCoursesPanLeft = '<div class="pan-left">HEYYYOO</div>';
-var HTMLonlineCoursesPanRight = '<div class="pan-right">HEYYYOO</div>';
 
-var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
 
 $(document).ready(function() {

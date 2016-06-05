@@ -1,5 +1,5 @@
  var bio = {
-     name: 'Jonathan Pribesh',
+     name: 'Jonathan R. Pribesh',
      role: 'Full-Stack Javascript Developer',
      contacts: {
          email: 'jpribes@wgu.edu',
@@ -9,8 +9,8 @@
          twitter: '@JohnPribesh'
      },
      bioPic: '../img/smalls/meCropped-small@2x.jpg',
-     skills: ['Javascript', 'HTML5', 'CSS3', 'Sass', 'Bash'],
-     welcomeMsg: 'Developer / Designer / Innovator',
+     skills: ['Javascript', 'AngularJS', 'NodeJS', 'HTML5', 'CSS3', 'Sass', 'Bash'],
+     welcomeMsg: 'Developer, designer, innovator, & solution to your problems!',
      display: displayBio
  };
 
@@ -1056,7 +1056,7 @@
      }, {
          school: 'Udacity',
          url: 'http://udacity.com',
-         dates: '',
+         dates: '05/06/2016 - Current',
          courses: []
      }],
      display: displayEducation
@@ -1103,7 +1103,7 @@
          dates: 'January 2012 - August 2012',
          location: 'Virginia Beach, VA',
          title: 'Tier1A (Technical Support Rep)',
-         description: ''
+         description: 'The Tier1 position was an entry-level position providing technical support in a LAMP hosting environment. The position required working knowledge of the Linux CLI, all popular CMS frameworks, and common coding languages.'
      }],
      display: displayWork
  };
@@ -1186,8 +1186,7 @@
      };
 
      // Add name & role
-     $headerTop.prepend(insertData(HTMLheaderRole, bio.role));
-     $headerTop.prepend(insertData(HTMLheaderName, bio.name));
+     $headerTop.prepend(insertData(HTMLheaderName, bio.name) + insertData(HTMLheaderRole, bio.role));
 
      // Add contact info
      Object.keys(bio.contacts).forEach(function(key) {
@@ -1217,8 +1216,6 @@
              $courseHTML.append([badge, title].join(''));
              $('.onlineschool-courses:last').append($courseHTML);
          });
-         $('.onlineschool-courses:last').prepend(HTMLonlineCoursesPanLeft);
-         $('.onlineschool-courses:last').append(HTMLonlineCoursesPanRight);
      });
  }
 
@@ -1232,12 +1229,3 @@
  }
 
  $('#mapDiv').append(googleMap);
-
- $('.onlineschool-courses').on('mouseover', function() {
-     $(this).find('.pan-left').show();
-     $(this).find('.pan-right').show();
- });
- $('.onlineschool-courses').on('mouseleave', function() {
-     $(this).find('.pan-left').hide();
-     $(this).find('.pan-right').hide();
- });

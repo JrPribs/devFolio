@@ -28,22 +28,26 @@ ul {
 }
 
 h1 {
-    font-variant: small-caps;
     font-size: 40px;
     color: $accent-color;
     line-height: 48px;
-    display: inline;
+    small {
+        font-size: .5em;
+        margin: 0 1em;
+        color: $primary-text-color;
+    }
 }
 
 h2 {
-    color: $accent-color;
+    color: $primary-color-text;
+    text-shadow: 0 1px 2px $primary-text-color;
     font-size: 30px;
     line-height: 29px;
     padding: 10px 5%;
 }
 
 h3 {
-    font-style: italic;
+    color: $primary-color-text;
     font-size: 22px;
     line-height: 22px;
 }
@@ -64,6 +68,9 @@ h2.accent-bg {
 
 .primary-bg {
     background-color: $primary-color;
+    h2 {
+        color: $primary-color-text;
+    }
 }
 
 .primary-bg-text {
@@ -72,6 +79,9 @@ h2.accent-bg {
 
 .light-bg {
     background-color: $primary-color-light;
+    h3 {
+        color: $primary-text-color;
+    }
 }
 
 .dark-bg {
@@ -106,24 +116,7 @@ h2.accent-bg {
 
 .section {
     border-bottom: 1px solid $divider-color;
-}
-
-.pan-left,
-.pan-right {
-    display: none;
-    position: absolute;
-    overflow:hidden;
-    height: 100%;
-    top: 0;
-    background-color: $primary-color-dark;
-}
-
-.pan-left {
-    left: 0;
-}
-
-.pan-right {
-    right: 0;
+    padding-bottom: 2em;
 }
 
 #header {
@@ -138,9 +131,16 @@ h2.accent-bg {
         padding: 0 5% 2.5%;
     }
 }
+
 #skills-h3 {
     color: $accent-color;
-    font-variant: small-caps;
+    margin-top: .5em;
+}
+
+#skills {
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
 }
 
 #footerContacts {
@@ -207,10 +207,9 @@ a {
 }
 
 .welcome-message {
-    font-style: italic;
     font-size: 18px;
-    color: #b5b5b7;
     line-height: 28px;
+    margin-bottom: 2em;
 }
 
 ul {
@@ -241,13 +240,12 @@ span {
     -moz-flex-direction: column;
     -webkit-flex-direction: column;
     flex-direction: column;
-    padding-bottom: 1em;
-    margin-top: 2em;
+    padding: 1em;
     .section {
         margin: 0 5%;
     }
     .online-course {
-        padding: 1% 5%;
+        padding: 1% 6%;
     }
     .onlineschool-courses {
         position: relative;
@@ -255,9 +253,9 @@ span {
         -moz-flex-direction: row;
         -webkit-flex-direction: row;
         flex-direction: row;
-        // -moz-flex-wrap: wrap;
-        // -webkit-flex-wrap: wrap;
-        // flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
         overflow-x: scroll;
         margin: 0 7.5%;
         .onlineschool-course {
@@ -268,19 +266,16 @@ span {
             margin: 5px;
             text-align: center;
             flex: 1;
-            max-height: 175px;
-            min-width: 150px;
-            .onlineschool-title {
-                margin: 5px;
-                max-height: 30px;
-            }
+            max-height: 150px;
+            min-width: 115px;
+            overflow: hidden;
             a {
-                margin-top: 10px;
+                font-size: 1em;
                 display: block;
             }
             img {
                 padding: 0;
-                max-height: 100px;
+                max-height: 75px;
             }
         }
     }
