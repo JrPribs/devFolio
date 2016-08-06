@@ -1,3 +1,5 @@
+'use strict';
+
 var HTMLheaderName = '<h1>%data%';
 var HTMLheaderRole = '<small>%data%</small></h1>';
 
@@ -48,10 +50,10 @@ var HTMLonlineBadge = '<img src="%data%">';
 
 var googleMap = '<div id="map"></div>';
 
-$(document).ready(function() {
-    $('button').click(function() {
+$(document).ready(function () {
+    $('button').click(function () {
         var $name = $('#name');
-        var iName = inName($name.text()) || function() {};
+        var iName = inName($name.text()) || function () {};
         $name.html(iName);
     });
 
@@ -74,7 +76,7 @@ function logClicks(x, y) {
     console.log('x location: ' + x + '; y location: ' + y);
 }
 
-$(document).click(function(loc) {
+$(document).click(function (loc) {
     var x = loc.pageX;
     var y = loc.pageY;
     logClicks(x, y);
@@ -100,11 +102,11 @@ function initializeMap() {
 
         locations.push(bio.contacts.location);
 
-        education.schools.forEach(function(school) {
+        education.schools.forEach(function (school) {
             locations.push(school.location);
         });
 
-        work.jobs.forEach(function(job) {
+        work.jobs.forEach(function (job) {
             locations.push(job.location);
         });
 
@@ -127,7 +129,7 @@ function initializeMap() {
             content: name
         });
 
-        google.maps.event.addListener(marker, 'click', function() {
+        google.maps.event.addListener(marker, 'click', function () {
             infoWindow.open(map, marker);
         });
 
@@ -144,7 +146,7 @@ function initializeMap() {
 
     function pinPoster(locations) {
         var service = new google.maps.places.PlacesService(map);
-        locations.forEach(function(place) {
+        locations.forEach(function (place) {
             var request = {
                 query: place
             };
@@ -166,7 +168,7 @@ window.addEventListener('load', initializeMap);
 
 // Vanilla JS way to listen for resizing of the window
 // and adjust map bounds
-window.addEventListener('resize', function(e) {
+window.addEventListener('resize', function (e) {
     //Make sure the map bounds get updated on page resize
     map.fitBounds(mapBounds);
 });
